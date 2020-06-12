@@ -1,11 +1,11 @@
 <html lang="ru">
 <head>
-    <title>Админ-панель</title>
+    <title>Удаление и изменение</title>
 </head>
 <body>
 <?php
 session_start();
-$link = mysqli_connect('localhost', 'root' , '','exam');
+$link = mysqli_connect('localhost', 'root' , '','lab3');
 
 $sql = mysqli_query($link, "SELECT `id`, `name`, `surname`,`login`,`password`,`lang`,`role` FROM `users` WHERE `id`={$_GET['edit']}");
 
